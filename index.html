@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+        .typing-area {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: white;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #passage {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .results {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Typing Speed Test</h1>
+
+    <div class="typing-area">
+        <p id="passage"></p>
+        <input type="text" id="typedInput" disabled>
+        <button id="startButton">Start Test</button>
+    </div>
+
+    <div class="results">
+        <p id="timeTaken"></p>
+        <p id="wpm"></p>
+        <p id="accuracy"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
